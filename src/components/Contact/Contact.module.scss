@@ -1,0 +1,19 @@
+.contact {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 80px;
+    background-color: #f2eee6eb;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 15px;
+    transition: background-color .2s ease-in-out;
+    
+    &:hover{
+        background-color: #f2f2f0eb;
+
+    }
+    .avatar {
+        margin-right: 20px;
+    }
+}

@@ -1,0 +1,105 @@
+.wrapper {
+  width: 100%;
+  background-color: #c6efd3;
+  height: 100vh;
+  display: flex;
+
+  .dialogsList {
+    background-color: #fffcf5;
+    padding: 0 0 20px;
+    min-width: 500px;
+  }
+
+  .emptyDialogs {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      opacity: 0.3;
+      margin-bottom: 15px;
+    }
+  }
+
+  .dialogsPage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .header {
+      display: flex;
+      align-items: center;
+      background-color: #e3f1e2;
+      padding: 20px 20px;
+
+      .avatar {
+        margin-right: 30px;
+      }
+    }
+
+    .messageBoard {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: flex-end;
+      flex: 1;
+      padding: 0 70px;
+      overflow-y: auto;
+      margin: 20px 0;
+      cursor: pointer;
+
+      .messageBlock{
+        width: 100%;
+      }
+
+      .messageWrapper {
+        text-align: right;
+        margin-bottom: 8px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+       
+      }
+
+      .active{
+        text-align: left;
+        
+        span{
+          background-color: #fffcf5;
+        }
+      }
+
+      span {
+        text-align: left;
+        display: inline-block;
+        background-color: aliceblue;
+        padding: 10px 10px 20px;
+        border-radius: 6px;
+        min-height: 40px;
+        max-width: 600px;
+        word-wrap: break-word;
+      }
+    }
+
+    .inputArea {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      background-color:   aliceblue;
+      padding: 30px 20px;
+
+      textarea {
+        resize: none;
+        font-size: inherit;
+        width: 95%;
+        padding: 10px 15px;
+        border-radius: 6px;
+        background-color: #c6efd3;
+        min-height: 80px;
+        max-height: 300px;
+      }
+    }
+  }
+}
